@@ -45,7 +45,7 @@ const data = [
 
 export default function ComplaintRate({ className }: { className?: string }) {
   return (
-    <WidgetCard title="Complaint Rate" className={className}>
+    <WidgetCard title="Şikayet Oranı" className={className}>
       <div className="h-80 w-full pt-9 @4xl:h-[22rem]">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart

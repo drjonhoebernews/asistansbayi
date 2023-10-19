@@ -101,7 +101,7 @@ export default function ProfitChart({ className }: { className?: string }) {
       <div className="grid grid-cols-10 gap-y-8">
         <div className="col-span-full flex flex-col @2xl:flex-row @2xl:justify-between @4xl:col-span-full @7xl:col-span-2 @7xl:flex-col">
           <div>
-            <p className="text-sm 2xl:text-base">Profit</p>
+            <p className="text-sm 2xl:text-base">Kâr</p>
             <Text tag="h3" className="mt-2 text-2xl font-semibold">
               {toCurrency(105000)}
             </Text>
@@ -109,14 +109,14 @@ export default function ProfitChart({ className }: { className?: string }) {
               <PiCaretDoubleUpDuotone className="me-1 h-4 w-4" />
               {toCurrency(1400)}
             </p>
-            <p className="mt-2">Average per month</p>
+            <p className="mt-2">Aylık Avaraj</p>
           </div>
 
           <Button
             variant="outline"
             className="mt-6 gap-2 @2xl:mt-0 @5xl:mt-auto"
           >
-            <PiDownloadSimpleBold /> Download Report
+            <PiDownloadSimpleBold /> Rapor Çek
           </Button>
         </div>
         <div className="col-span-full @3xl:col-span-full @7xl:col-span-8">

@@ -11,25 +11,25 @@ const ticketStats = [
   {
     id: 1,
     icon: <TicketIcon className="h-full w-full" />,
-    title: 'Total Number of Tickets',
+    title: 'Toplam Destek Talebi',
     metric: '12,450',
   },
   {
     id: 2,
     icon: <TagIcon className="h-full w-full" />,
-    title: 'Unassigned Tickets',
+    title: 'Okumuş Talepler',
     metric: '3,590',
   },
   {
     id: 3,
     icon: <TagIcon2 className="h-full w-full" />,
-    title: 'Open Tickets',
+    title: 'Açılaan Talepler',
     metric: '7,890',
   },
   {
     id: 3,
     icon: <TagIcon3 className="h-full w-full" />,
-    title: 'Solved Tickets',
+    title: 'Çözülen Talepler',
     metric: '1,160',
   },
 ];

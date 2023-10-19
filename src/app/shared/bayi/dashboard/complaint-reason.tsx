@@ -5,17 +5,17 @@ import WidgetCard from '@/components/cards/widget-card';
 import cn from '@/utils/class-names';
 
 const data = [
-  { name: 'Damaged Packaging', value: 100, color: '#3872FA' },
-  { name: 'Missing Parts', value: 80, color: '#7928ca' },
-  { name: 'Late Delivery', value: 50, color: '#eab308' },
-  { name: 'Lost Shipment', value: 30, color: '#f1416c' },
-  { name: 'Others', value: 20, color: '#c084fc' },
+  { name: 'Parkta Hasar', value: 100, color: '#3872FA' },
+  { name: 'Yolda Hasar', value: 80, color: '#7928ca' },
+  { name: 'Lastik Patlaması', value: 50, color: '#eab308' },
+  { name: 'Benzin Bitmesi', value: 30, color: '#f1416c' },
+  { name: 'Diğer', value: 20, color: '#c084fc' },
 ];
 
 export default function ComplaintReason({ className }: { className?: string }) {
   return (
     <WidgetCard
-      title="Complaint Reason"
+      title="Gelen İhbar Oranları"
       className={cn('flex flex-col justify-between', className)}
     >
       <div className="h-80 w-full pt-9 @2xl:mx-auto @2xl:w-[28rem] @6xl:h-[28rem] @7xl:h-80 @7xl:pt-6">

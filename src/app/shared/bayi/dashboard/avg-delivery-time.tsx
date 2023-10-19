@@ -57,12 +57,11 @@ export default function AvgDeliveryTime({ className }: { className?: string }) {
     <WidgetCard
       rounded="lg"
       className={className}
-      title="Avg Delivery Time"
+      title="Oralama Günlük AVR"
       description={
         <>
-          <Badge renderAsDot className="me-0.5 bg-[#10b981]" /> On Time Delivery
-          <Badge renderAsDot className="me-0.5 ms-4 bg-[#FA436B]" /> Late
-          Delivery
+          <Badge renderAsDot className="me-0.5 bg-[#10b981]" /> Anlık Satış
+          <Badge renderAsDot className="me-0.5 ms-4 bg-[#FA436B]" /> Haftalık Satış
         </>
       }
       descriptionClassName="mt-1.5"

@@ -105,12 +105,12 @@ export default function SignInForm() {
                 variant="flat"
                 className="[&>label>span]:font-medium"
               />
-              <Link
-                href={routes.auth.forgotPassword1}
-                className="h-auto p-0 text-sm font-semibold text-blue underline transition-colors hover:text-gray-900 hover:no-underline"
-              >
-                Şifremi unuttum?
-              </Link>
+              {/*<Link*/}
+              {/*  href={routes.auth.forgotPassword1}*/}
+              {/*  className="h-auto p-0 text-sm font-semibold text-blue underline transition-colors hover:text-gray-900 hover:no-underline"*/}
+              {/*>*/}
+              {/*  Şifremi unuttum?*/}
+              {/*</Link>*/}
             </div>
             <Button className="w-full" type="submit" size="lg" color="info">
               <span>Giriş</span>{' '}

@@ -17,18 +17,18 @@ export default function SupportDashboard() {
 
         <TicketActivity className="col-span-full" />
 
-        <ProblemTypes className="col-span-full @4xl:col-span-6 @6xl:col-span-7 @7xl:col-span-8" />
-        <SatisfactionRate className="col-span-full @4xl:col-span-6 @6xl:col-span-5 @7xl:col-span-4" />
+        {/*<ProblemTypes className="col-span-full @4xl:col-span-6 @6xl:col-span-7 @7xl:col-span-8" />*/}
+        {/*<SatisfactionRate className="col-span-full @4xl:col-span-6 @6xl:col-span-5 @7xl:col-span-4" />*/}
 
-        <CustomerWithMostTickets className="col-span-full" />
+        {/*<CustomerWithMostTickets className="col-span-full" />*/}
 
-        <ResponseRate className="col-span-full @4xl:col-span-6 @6xl:col-span-7" />
-        <CustomerType className="col-span-full @4xl:col-span-6 @6xl:col-span-5" />
+        {/*<ResponseRate className="col-span-full @4xl:col-span-6 @6xl:col-span-7" />*/}
+        {/*<CustomerType className="col-span-full @4xl:col-span-6 @6xl:col-span-5" />*/}
 
-        <TicketsTable className="col-span-full" />
+        {/*<TicketsTable className="col-span-full" />*/}
 
-        <EmployeesActivity className="col-span-full @4xl:col-span-6 @5xl:col-span-7" />
-        <CustomerTimezone className="col-span-full @4xl:col-span-6 @5xl:col-span-5" />
+        {/*<EmployeesActivity className="col-span-full @4xl:col-span-6 @5xl:col-span-7" />*/}
+        {/*<CustomerTimezone className="col-span-full @4xl:col-span-6 @5xl:col-span-5" />*/}
       </div>
     </div>
   );

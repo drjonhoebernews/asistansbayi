@@ -140,17 +140,17 @@ const monthlyData = [
   },
 ];
 
-const ticketStatus = [{ name: 'New' }, { name: 'Solved' }, { name: 'Overdue' }];
+const ticketStatus = [{ name: 'Yeni' }, { name: 'Çözülmüş' }, { name: 'İşlemde' }];
 const COLORS = ['#7928ca', '#10b981', '#eab308'];
 
 const viewOptions = [
   {
     value: 'Daily',
-    name: 'Daily',
+    name: 'Günlük',
   },
   {
     value: 'Monthly',
-    name: 'Monthly',
+    name: 'Aylık',
   },
 ];
 
@@ -168,7 +168,7 @@ export default function TicketActivity({ className }: { className?: string }) {
 
   return (
     <WidgetCard
-      title="Daily Ticket Activity"
+      title="Destek Talebi Aktivitesi"
       headerClassName="items-center"
       action={<DropdownAction options={viewOptions} onChange={handleChange} />}
       className={cn('min-h-[28rem]', className)}

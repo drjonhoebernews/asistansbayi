@@ -17,17 +17,17 @@ import TrendingDownIcon from '@/components/icons/trending-down';
 const statData = [
   {
     id: '1',
-    title: 'Costs',
+    title: 'Maliyetler',
     icon: <ExpenseIcon className="h-7 w-7" />,
     graphIcon: <TrendingUpIcon className="me-1 h-4 w-4" />,
     graphColor: 'text-red',
     metric: 57890,
     increased: true,
-    percentage: '+4.40',
+    percentage: '-4.40',
   },
   {
     id: '2',
-    title: 'Revenue',
+    title: 'Hasılat',
     icon: <RevenueUpIcon className="h-7 w-7" />,
     graphIcon: <TrendingUpIcon className="me-1 h-4 w-4" />,
     graphColor: 'text-green',
@@ -40,41 +40,21 @@ const statData = [
     icon: <SalesIcon className="h-9 w-9" />,
     graphIcon: <TrendingUpIcon className="me-1 h-4 w-4" />,
     graphColor: 'text-green',
-    title: 'Sales',
+    title: 'Satış',
     metric: 12390,
     increased: true,
     percentage: '+32.40',
-  },
-  {
-    id: '4',
-    title: 'Shipments ',
-    icon: <ContainersIcon className="h-7 w-7" />,
-    graphIcon: <TrendingUpIcon className="me-1 h-4 w-4" />,
-    graphColor: 'text-green',
-    metric: 12390,
-    increased: true,
-    percentage: '+32.40',
-  },
-  {
-    id: '5',
-    title: 'Avg. Delivery Time',
-    icon: <ExpressDeliveryIcon className="h-7 w-7" />,
-    graphIcon: <TrendingDownIcon className="me-1 h-4 w-4" />,
-    graphColor: 'text-red',
-    metric: '3 Days',
-    decreased: true,
-    percentage: '5.40',
   },
 ];
 
 const viewOptions = [
   {
     value: 'today',
-    name: 'Today',
+    name: 'Bugün',
   },
   {
     value: 'this-week',
-    name: 'This Week',
+    name: 'GeçenHafta',
   },
 ];
 
@@ -87,7 +67,7 @@ export default function StatCards({ className }: { className?: string }) {
     <WidgetCard
       rounded="lg"
       className={className}
-      title="General Overview"
+      title="Genel Görünüm"
       headerClassName="mb-2 @2xl:mb-5"
       action={<DropdownAction options={viewOptions} onChange={handleChange} />}
     >
@@ -117,9 +97,9 @@ export default function StatCards({ className }: { className?: string }) {
                   {stat.percentage}%
                 </Text>
                 <Text tag="span" className="me-1 hidden @[240px]:inline-flex">
-                  {stat.increased ? 'Increased' : 'Decreased'}
+                  {stat.increased ? 'artıyor' : 'eksiliyor'}
                 </Text>{' '}
-                last month
+                geçen aya göre
               </Text>
             </MetricCard>
           ))}
