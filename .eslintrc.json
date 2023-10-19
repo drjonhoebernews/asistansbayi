@@ -1,0 +1,11 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "no-duplicate-imports": "off",
+    "import/no-unresolved": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "error"
+  }
+}
